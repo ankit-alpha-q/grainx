@@ -1,155 +1,212 @@
-body {
-  background-color: #282c34;
-}
 
-.App {
+.loginPage{
   text-align: center;
-  max-width: 728px;
-  margin: 0 auto;
 }
-
-.App header {
-  background-color: #181717;
-  height: 10vh;
-  min-height: 50px;
-  color: white;
-  position: fixed;
-  width: 100%;
-  max-width: 728px;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 99;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.App section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: rgb(40, 37, 53);
-}
-
-main {
-  padding: 10px;
-  height: 80vh;
-  margin: 10vh 0 10vh;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
-}
-
-main::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-main::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-main::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
-
-form {
-  height: 10vh;
-  position: fixed;
-  bottom: 0;
-  background-color: rgb(24, 23, 23);
-  width: 100%;
-  max-width: 728px;
-  display: flex;
-  font-size: 1.5rem;
-}
-
-form button {
-  width: 20%;
-  background-color: rgb(56, 56, 143);
-}
-
-
-input {
-  line-height: 1.5;
-  width: 100%;
-  font-size: 1.5rem;
-  background: rgb(58, 58, 58);
-  color: white;
-  outline: none;
-  border: none;
-  padding: 0 10px;
-}
-
-button {
-  background-color: #282c34; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.25rem;
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-
-.sign-in {
-  color: #282c34;
-  background: white;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-
-
-
-ul, li {
+.navbar{
+  background: #4056a1;
   text-align: left;
-  list-style: none;
 }
-
-p {
-  max-width: 500px;
-  margin-bottom: 12px;
-  line-height: 24px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  position: relative;
-  color: white;
-  text-align: center;
+.gallery{
+  height: 100vh;
+  background-color: #EFE2BA;
 }
-
-.message {
+.avatar{
+  float: right;
+  height: 0px;
+}
+.row{
   display: flex;
-  align-items: center;
+  width: 100%;
+}
+.cols-3{
+  width: 25%;
+  background-color: #d7d3b6 ;
+  transition: background-color 0.5s;
+  text-align: center;
+  padding: 10px 10px 5px;
+  cursor: pointer;
+}
+.cols-3:hover{
+  background-color: #c5cbe3;
+}
+.selectedTab{
+  background-color: #ca9aa4 !important;
+}
+.tabIcon{
+  color: antiquewhite;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+@media screen and (max-width: 799px) {
+  .heading{
+    margin: 0;
+    padding: 8px 0 0 12px;    
+    color: #d79922;
+    display: inline-block;
+    font-size: 24px;
+  }
+  .subheading{
+    padding: 0 0 8px 12px;
+    margin: 0;
+    color: antiquewhite;
+    font-size: 16px;
+  }
+  .letterx{
+    font-size: 30px;
+    color: antiquewhite;
+  }
+  .sign-in {
+    background-color: #c5cbe3;
+    border: none;
+    color: #4056a1;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    float: right;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+  }
+  .grainImage{
+    width: 100px;
+    height: 100px;
+    padding-top: 150px; 
+  }
+  .tagLine{
+    padding-top: 10px;
+    font-size: 10px;
+    color: #4056a1;
+  }
+  .avatarPic{
+    float: right;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 1px solid whitesmoke
+  }
+  .iconButton {
+    float: right;
+    padding: 12px;
+    zoom: 0.8;
+    color: dimgrey;
+    cursor: pointer;
+  }
+  .addIcon {
+    font-size: 30px;
+  }
+  .adminRecord {
+    padding: 12px;
+    margin: 0 8px 8px 8px;
+    border-radius: 5px;
+    background: whitesmoke;
+  }
+  .adminName {
+    font-size: 18px;
+    color: darkslategrey;
+  }
+  .adminEmail {
+    font-size: 12px;
+    color: saddlebrown;
+  }
+  .tabHeading{
+    font-size: 20px;
+    background: antiquewhite;
+    padding: 8px;
+    font-weight: 500;
+    color: darkslategrey;
+    margin-bottom: 10px;
+  }
 }
 
-
-.sent {
-  flex-direction: row-reverse;
+@media screen and (min-width: 800px) {
+  .heading{
+    margin: 0;
+    padding: 16px 0 0 16px;    
+    color: #d79922;
+    display: inline-block;
+  }
+  .subheading{
+    padding: 0 0 16px 16px;
+    margin: 0;
+    color: antiquewhite;
+  }
+  .letterx{
+    font-size: 40px;
+    color: antiquewhite;
+  }
+  .sign-in {
+    background-color: #c5cbe3;
+    border: none;
+    color: #4056a1;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    float: right;
+    border-radius: 8px;
+    margin: 32px;
+  }
+  .grainImage{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 20vh;
+  }
+  .tagLine{
+    padding-top: 180px;
+    font-size: 18px;
+    color: #4056a1;
+  }
+  .avatarPic{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    cursor: pointer;
+    border: 2px solid whitesmoke
+  }
+  .iconButton {
+    float: right;
+    padding: 12px;
+    color: dimgrey;
+    cursor: pointer;
+  }
+  .iconButton:hover{
+    background-color: lightgrey;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+  }
+  .adminRecord {
+    padding: 20px;
+    margin: 0 10px 10px 10px;
+    border-radius: 5px;
+    background: whitesmoke;
+  }
+  .adminName {
+    font-size: 22px;
+    color: darkslategrey;
+  }
+  .adminEmail {
+    font-size: 15px;
+    color: saddlebrown;
+  }
+  .tabHeading{
+    font-size: 25px;
+    background: antiquewhite;
+    padding: 12px;
+    font-weight: 500;
+    color: darkslategrey;
+    margin-bottom: 10px;
+  }
+  .addIcon {
+    font-size: 35px;
+  }
 }
-
-.sent p {
-  color: white;
-  background: #0b93f6;
-  align-self: flex-end;
-}
-.received p {
-  background: #e5e5ea;
-  color: black;
-}
-
-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 2px 5px;
-}
-
