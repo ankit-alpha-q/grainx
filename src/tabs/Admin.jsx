@@ -28,7 +28,7 @@ class Admin extends Component {
 render(){
     return (
       <div>
-        { this.props.isAdmin && <i className="material-icons noselect iconButton addIcon" onClick={}>add</i> }
+        { this.props.isAdmin && <i className="material-icons noselect iconButton addIcon">add</i> }
         <div className="tabHeading noselect">Administration</div>
         <Layout props={this.props}/>
       </div>
